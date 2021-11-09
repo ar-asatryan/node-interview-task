@@ -10,7 +10,7 @@ exports.findAll = (req, res) => {
         }
 };
 
-// Retreive only one User by id:
+// Retreive only one User by username:
 exports.findOne = (req, res) => {
         try{
           res.send(req.params.username);

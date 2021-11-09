@@ -5,8 +5,6 @@ module.exports = app => {
 
   let router = require("express").Router();
 
-  // Create a new User
-
   // Retrieve all Users
   router.get("/", userController.findAll);
 

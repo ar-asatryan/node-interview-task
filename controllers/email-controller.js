@@ -17,7 +17,7 @@ exports.sendSingleMail = () => {
     secure: true, // use SSL
     auth: {
       user: "ar.asatryan94@gmail.com",
-      pass: "aroray_35",
+      pass: "*******",
     },
     tls: {
       rejectUnauthorized: false

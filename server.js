@@ -33,3 +33,9 @@ db.mongoose
     console.log("Cannot connect to the database!", err);
     process.exit();
   });
+
+db.mongoose.connection.once('open', function(){
+  console.log('connection has been made......')
+}).on('error', function(error){
+  console.log('Connection Error:', error)
+})

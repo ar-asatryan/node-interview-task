@@ -12,10 +12,7 @@ exports.findAll = (req, res) => {
 
 // Retreive only one User by username:
 exports.findOne = (req, res) => {
-        try{
-          res.send(req.params.username);
-        } catch (err) {
-          res.status(500).json({ message: err.message })
-        }
+        const username = req.params.userName;
+        res.send(users.filter(user => user.username === username))
 };
 

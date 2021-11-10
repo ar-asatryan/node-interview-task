@@ -7,8 +7,7 @@ module.exports = mongoose => {
           email: String,
           phone_number: String,
           template_messages: String
-        },
-        { timestamps: true }
+        }
       )
     );
   
